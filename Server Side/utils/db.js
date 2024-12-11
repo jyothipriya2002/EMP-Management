@@ -1,4 +1,6 @@
-import mysql from 'mysql2';
+// import mysql from 'mysql2';
+const mysql = require('mysql2');
+
 // const cors = require("cors");
 
 // app.use(cors({ origin: "*"}));
@@ -18,6 +20,8 @@ Connection.connect((err) => {
   console.log('Connected to MySQL');
 });
  
-export default Connection
+// export default Connection
+module.exports = Connection;
+
 
 

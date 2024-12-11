@@ -1,7 +1,11 @@
-import express from 'express'
-import con from "../utils/db.js";
-import jwt from "jsonwebtoken";
-import bcrypt from 'bcrypt'
+// import express from 'express'
+// import con from "../utils/db.js";
+// import jwt from "jsonwebtoken";
+// import bcrypt from 'bcrypt'
+const express = require('express');
+const con = require("../utils/db.js");
+const jwt = require("jsonwebtoken");
+const bcrypt = require('bcrypt');
 
 const router = express.Router()
 
@@ -44,4 +48,6 @@ router.post("/employee_login", (req, res) => {
     return res.json({Status: true})
   })
 
-  export {router as EmployeeRouter}
+  // export {router as EmployeeRouter}
+  // module.exports = { EmployeeRouter: router };
+  module.exports = router

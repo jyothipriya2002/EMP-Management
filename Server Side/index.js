@@ -1,9 +1,15 @@
-import express from "express";
-import cors from 'cors'
-import { adminRouter } from "./Routes/AdminRoute.js";
-import { EmployeeRouter } from "./Routes/EmployeeRoute.js";
-import Jwt from "jsonwebtoken";
-import cookieParser from "cookie-parser";
+// import express from "express";
+// import cors from 'cors'
+// import { adminRouter } from "./Routes/AdminRoute.js";
+// import { EmployeeRouter } from "./Routes/EmployeeRoute.js";
+// import Jwt from "jsonwebtoken";
+// import cookieParser from "cookie-parser";
+const express = require("express");
+const cors = require("cors");
+const adminRouter = require("./Routes/AdminRoute.js");
+const EmployeeRouter = require("./Routes/EmployeeRoute.js");
+const Jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 
 const nodeVersion = process.version;
 console.log(`Your Node.js version is: ${nodeVersion}`);
