@@ -1,12 +1,12 @@
 import mysql from 'mysql2';
-const cors = require("cors");
+// const cors = require("cors");
 
-app.use(cors({ origin: "*"}));
+// app.use(cors({ origin: "*"}));
 // Create the MySQL connection with the correct credentials
 const Connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '2002', // Make sure this matches your MySQL root password
+  host: 'empdb-1.cpciemww60k8.eu-north-1.rds.amazonaws.com',
+  user: 'admin',
+  password: 'Priya123', // Make sure this matches your MySQL root password
   database: 'emp', // Replace with your database name
 });
 
