@@ -1,5 +1,7 @@
 import mysql from 'mysql2';
+const cors = require("cors");
 
+app.use(cors({ origin: "*"}));
 // Create the MySQL connection with the correct credentials
 const Connection = mysql.createConnection({
   host: 'localhost',
