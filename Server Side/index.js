@@ -5,6 +5,9 @@ import { EmployeeRouter } from "./Routes/EmployeeRoute.js";
 import Jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
 
+const nodeVersion = process.version;
+console.log(`Your Node.js version is: ${nodeVersion}`);
+
 const app = express() 
 app.use(cors({
     origin: ["http://localhost:5173"],
