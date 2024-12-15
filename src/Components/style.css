@@ -1,4 +1,4 @@
-.loginPage {
+/* .loginPage {
     background: url('Images/employeems.jpeg');
     background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)), url("Images/employeems.jpeg");
     background-position: center;
@@ -25,4 +25,49 @@ ul li :hover {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+} */
+
+
+
+
+.loginPage {
+    background: url('Images/employeems.jpeg');
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)), url("Images/employeems.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed to cover for better responsiveness */
+}
+
+.loginForm {
+    background-color: rgba(1, 32, 93, 0.6);
+    color: white;
+}
+
+ul li:hover {
+    background-color: gray;
+}
+
+.employee_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.emp_det_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* Mobile-first styles */
+@media (min-width: 576px) {
+    .loginForm {
+        width: 50%; /* 50% width on small devices */
+    }
+}
+
+@media (min-width: 768px) {
+    .loginForm {
+        width: 25%; /* 25% width on medium devices */
+    }
 }
